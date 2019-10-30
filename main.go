@@ -23,6 +23,7 @@ var (
 	localPort     = flag.Int("localPort", 1080, "Local port to listen")
 	logFileName   = flag.String("log", "", "Log file name, default to stdout")
 	version       = flag.Bool("version", false, "Show current version and exit")
+	_             = flag.Bool("fast-open", false, "Enable TCP Fast Open (Not implement yet.)")
 )
 
 func main() {
